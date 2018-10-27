@@ -45,14 +45,13 @@ También es posible establecer un ancla a cierto lugar de la página. Para hacer
 
 ```html
 
-<a name="top"></a> 
+<a name="principio"></a> 
 ```
 
 No se requiere ninguna descripción entre etiquetas. Después de eso, puede colocar un enlace que conduce a este ancla en cualquier lugar de la misma página. Para hacer esto, debe usar la etiqueta con el atributo necesario "href" con el símbolo # (marcado) y la descripción de la palabra clave del ancla, como esto:
 
 ```html
-
-<a href="#top">Go to Top</a> 
+<a href="#principio">Ir al principio de la pagina</a> 
 ```
 
 ### Enlaces de imagen
@@ -74,7 +73,7 @@ El `<a href="#">` también puede aplicarse a imágenes y otros elementos HTML.
 
 ```html
 
-<base href="https://www.freecodecamp.org/a-href/">This gives a base url for all further urls on the page</a> 
- <link href="style.css">This is a live link to an external stylesheet</a> 
+<base href="https://www.freecodecamp.org/a-href/">Esto da una base para los URLs consecutivos en esta pagina</a> 
+ <link href="style.css">Esta es una enlance directo a una hoja de estilo externa</a> 
 
 ```
