@@ -100,31 +100,31 @@ Spans y divs no son elementos. Están destinados a contener otros elementos, no 
     <a href="JavascriptThing">English</a> 
 ```
 
-Auge. De repente, todos estos elementos ahora son perfectamente accesibles, solo mediante el uso de HTML nativo. HTML de la forma en que estaba destinado a ser utilizado, en otras palabras.
+Aunque, de repente, todos estos elementos ahora son perfectamente accesibles, solo mediante el uso de HTML nativo. HTML de la forma en que estaba destinado a ser utilizado, en otras palabras.
 
 ### Una fundación no puede soportar sin estructura.
 
-Un poco antes, toqué las teclas de acceso rápido de un lector de pantalla para saltar de un encabezado a otro. De hecho, hay muchas teclas de acceso rápido como esta para saltar rápidamente a la tabla más cercana, campo de formulario, enlace, etc. Asegurarse de que estos encabezados estén realmente en lugares lógicos es una buena práctica y realmente disminuye los niveles de estrés de los usuarios de la tecnología de asistencia, lo cual es bueno Si quieres que los visitantes sigan regresando a tu sitio web.
+Un poco antes, toqué las teclas de acceso rápido de un lector de pantalla para saltar de un encabezado a otro. De hecho, hay muchas teclas de acceso rápido como esta para saltar rápidamente a la tabla más cercana, campo de formulario, enlace, etc. Asegurarse de que estos encabezados estén realmente en lugares lógicos es una buena práctica y realmente disminuye los niveles de estrés de los usuarios de la tecnología de asistencia, lo cual es bueno si quieres que los visitantes sigan regresando a tu sitio web.
 
-También recuerda que los encabezados son jerárquicos. Si usas un h2, asegúrate de que los h3 que lo siguen tengan algo que ver con ese h2. No coloque un h3 para detalles de contacto debajo de su h2 para publicaciones de blog recientes. Una buena analogía aquí es un libro con capítulos, que tienen subsecciones. No pondría una sección sobre cómo hornear galletas en medio de un capítulo sobre la preparación de verduras ... o ... no lo haría ... ¿verdad?
+También recuerda que los encabezados son jerárquicos. Si usas un `<h2>`, asegúrate de que los `<h3>` que lo siguen tengan algo que ver con ese `<h2>`. No coloque un `<h3>` para detalles de contacto debajo de su `<h2>` para publicaciones de blog recientes. Una buena analogía aquí es un libro con capítulos, que tienen subsecciones. No pondría una sección sobre cómo hornear galletas en medio de un capítulo sobre la preparación de verduras ... o ... no lo haría ... ¿verdad?
 
 ### ¿Cuál es la alternativa?
 
 Las imágenes en un sitio web son excelentes. Añaden una nueva capa a su contenido, realmente pueden hacer que la experiencia de los visitantes de su sitio sea mucho más inmersiva y, en general, se vea bien entre todo ese texto. Una imagen puede decir más que mil palabras, ¿verdad?
 
-Ciertamente. Es decir, si puedes verlos. En la especificación HTML5, un atributo img siempre debe tener un atributo alt. Este atributo está pensado como una alternativa a la imagen en caso de que no se pueda ver. Esto sería cierto para los visitantes ciegos de su sitio web, pero también cuando su imagen no se pueda cargar por algún motivo. Por lo tanto, no agregar una etiqueta alt a un atributo img no solo rompe la accesibilidad, sino que va en contra de la especificación HTML5.
+Ciertamente, es decir, si puedes verlos. En la especificación HTML5, un etiqueta `<img>` siempre debe tener un atributo `alt`. Este atributo está pensado como una alternativa a la imagen en caso de que no se pueda ver. Esto sería cierto para los visitantes ciegos de su sitio web, pero también cuando su imagen no se pueda cargar por algún motivo. Por lo tanto, no agregar una atributo `alt` a un etiqueta `<img>` no solo rompe la accesibilidad, sino que va en contra de la especificación HTML5.
 
 Imploro a cualquier desarrollador web que se sorprenda haciendo esto para comerse el sombrero de su programador y trabajar en Windows 95 exclusivamente durante una semana. Después de que se acabe el tiempo, escribe un ensayo sobre lo que has aprendido de esta prueba para que pueda reírme durante mi café de la tarde.
 
-Ahora, hay una advertencia aquí. Los atributos Alt son obligatorios según la especificación HTML5, pero no es obligatorio rellenarlos. `<img src="awesome-image.jpg", alt="">` es un código HTML5 legal.
+Ahora, hay una advertencia aquí. Los atributos `alt` son obligatorios según la especificación HTML5, pero no es obligatorio rellenarlos. `<img src="awesome-image.jpg", alt="">` es un código HTML5 legal.
 
-¿Debería por lo tanto llenar las etiquetas alt para todas las imágenes? Depende de la imagen, de verdad. Para las imágenes de fondo, la respuesta suele ser no, pero de todos modos debería usar CSS.
+¿Debería por lo tanto llenar las atributos `alt` para todas las imágenes? Depende de la imagen, de verdad. Para las imágenes de fondo, la respuesta suele ser no, pero de todos modos debería usar CSS.
 
 Para imágenes puramente decorativas que no tienen información en absoluto, básicamente tiene la libertad de elegir. O bien poner algo útil y descriptivo o nada en absoluto.
 
 Para las imágenes que contienen información, como un folleto, un mapa, un gráfico, etc., no agregue saltos de texto alternativos WCAG a menos que proporcione una alternativa textual. Este suele ser un atributo alternativo, pero también puede ser un bloque de texto justo debajo o al lado de la imagen.
 
-Para imágenes de texto, el texto se puede incluir en el atributo alt o se puede ofrecer de alguna manera alternativa. El problema es que agregar la alternativa textual en la misma página básicamente haría que el mismo contenido se muestre dos veces para las personas que pueden ver la imagen, por lo que el atributo alt es mejor en este caso.
+Para imágenes de texto, el texto se puede incluir en el atributo `alt` o se puede ofrecer de alguna manera alternativa. El problema es que agregar la alternativa textual en la misma página básicamente haría que el mismo contenido se muestre dos veces para las personas que pueden ver la imagen, por lo que el atributo `alt` es mejor en este caso.
 
 El texto debe proporcionar el contexto y la información que es una alternativa para ver la imagen. Simplemente no es suficiente escribir "imagen de globos aerostáticos": ¿por qué hay imágenes de globos allí? Si la imagen está estilizada o transmite un significado emocional, esto puede incluirse.
 
@@ -140,7 +140,7 @@ Un buen lugar para comenzar a verificar el contraste de color es mediante el uso
 
 Mientras estamos en el tema de los formularios, echemos un vistazo rápido a la etiqueta de `input` . Este pequeño es algo importante.
 
-Cuando coloca algunos campos de entrada en una página web, puede usar etiquetas para ... bueno ... etiquetarlos. Sin embargo, ponerlos uno al lado del otro no es suficiente. El atributo que desea es el atributo for, que toma el ID de un campo de entrada posterior. De esta manera, las tecnologías de asistencia saben qué etiqueta asociar con qué campo de formulario.
+Cuando coloca algunos campos de entrada en una página web, puede usar etiquetas para ... bueno ... etiquetarlos. Sin embargo, ponerlos uno al lado del otro no es suficiente. El atributo que desea es el atributo `for`, que toma el ID de un campo de entrada posterior. De esta manera, las tecnologías de asistencia saben qué etiqueta asociar con qué campo de formulario.
 
 Supongo que la mejor manera de ilustrar esto es dando un ejemplo:
 
@@ -175,7 +175,7 @@ Si coloca su elemento en la parte superior de su elemento, también se mostrará
 
 Por lo tanto, un consejo final que quiero darles todo es prestar atención al orden de su HTML, no solo a su sitio web terminado con CSS agregado. ¿Sigue teniendo sentido sin CSS? ¡Estupendo!
 
-Oh ... no lo hace? En ese caso ... es posible que algún día escuches una maldición apagada en una brisa fría mientras caminas afuera. Eso es muy probable que sea yo, visitando su sitio web.
+Oh ... ¿no lo hace? En ese caso ... es posible que algún día escuches una maldición apagada en una brisa fría mientras caminas afuera. Eso es muy probable que sea yo, visitando su sitio web.
 
 En ese caso realmente solo tengo dos palabras para ti. A menudo he escuchado esas mismas dos palabras dirigidas a mí cuando escribí un código incorrecto y es con gran placer que les digo: "¡váyanse a arreglar!"
 
